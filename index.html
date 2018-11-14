@@ -3,34 +3,77 @@
 <html>
 	<head>
 		<title>Alona's Portfolio</title>
+		<!-- make sure to add resets.css -->
 		<link rel="stylesheet" type="text/css" href="styles/mystyle.css">
 	</head>
 	<body>
 		<header>
-			<h1> Alona Oneill </h1>
+			<h1>Alona Oneill</h1>
 		</header>
+		<!-- I would include this image in either your header or main -->
 		<img src="images/photo.jpg">
 		<main>
+			<!-- Is there a reason you used 1 paragraph tag with multiple <br>s in it, -->
+			<!-- vs. multiple paragraph tags? I would highly recommend using multiple paragraph tags, -->
+			<!-- because that is semantically what this text is. -->
 			<p>I’m an Entry Level Web Developer at hook42.<br>
 			I was Born and raised in Vinnytsia, Ukraine. At 2015 I decided to take a break from schooland came to USA where I met my true love and stayed.<br>
 			In past I  spent t 6 years studying and working in law field, 3 years in childcare.<br>
 			Present time II’m an Entry level Web Developer at hook42.<br>
 			I am passionate about cooking. Love to travel, explore new things and new experiences.<br> I also do other things, though, including spending time with my family, studying  etc.<br>
 		    </p>
-            <h4>I speak 3 languages:</h4>
+			<h4>I speak 3 languages:</h4>
+			<!-- need beginning <ul> or <ol> -->
+			<!-- make sure to use proper indentation -->
 					<li> English,</li>
 					<li> Russian </li>
 					<li> Ukrainian </li>
 			<h2>Experience</h2>
+				<!-- great use of class names – I'm very impressed you figured columns and rows out on your own! -->
+				<!-- NOTE: you could have also used a <table> with different rows and cells to help you space out all this content -->
+				<!-- <table>
+					<tr>
+						<td>
+							<h3>Entry Web Developer</h3>
+							<ul>
+								<li>Company Name: hook42</li>
+							</ul>
+						</td>
+						<td>
+							<h3>Aupair</h3>
+							<ul>
+								<li>Company Name: GoAupair</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h3>Real Estate Agent</h3>
+							<ul>
+								<li>Company Name: "Antey" Real Estate Company</li>
+							</ul>
+						</td>
+						<td>
+							<h3>Travel Agent</h3>
+							<ul>
+								<li>Company Name: RK Travel</li>
+							</ul>
+						</td>
+					</tr>
+				</table> -->
+
+				<!-- fix indenting – this "row" div should not be indented -->
 			    <div class="row">
 				    <div class="column">
 						<h3>Entry Web Developer</h3>
+						<!-- need beginning <ul> or <ol> -->
 							<li>Company Name: hook42</li>
 							<li>Dates Employed: Sep 2018 – Present</li>
 							<li>Employment Duration: 3 month</li>
 							<li>Location: San Francisco Bay Area</li>
 							<li>Entry level Drupal Developer.</li>
 						<h3>Aupair</h3>
+						<!-- need beginning <ul> or <ol> -->
 							<li>Company Name: GoAupair</li>
 							<li>Dates Employed: Oct 2015 – Present</li>
 							<li>Employment Duration: 3 yrs 2 month</li>
@@ -39,11 +82,13 @@
 					</div>
 					<div class="column">
 						<h3>Real Estate Agent</h3>
+						<!-- need beginning <ul> or <ol> -->
 							<li>Company Name: "Antey" Real Estate Company</li>
 							<li>Dates Employed: May 2014 – Oct 2015</li>
 							<li>Employment Duration1 yr 6 mos</li>
 							<li>Location: Vinnytsia Region, Ukraine</li>
 			            <h3>Travel Agent</h3>
+						<!-- need beginning <ul> or <ol> -->
 							<li>Company Name: RK Travel</li>
 							<li>Dates Employed: May 2014 – Oct 2015</li>
 							<li>Employment Duration: 1 yr 6 month</li>
@@ -53,6 +98,7 @@
 			<div class="row">
 			    <div class="column">
 					<h2>Skills</h2>
+					<!-- need beginning <ul> or <ol> -->
 							<li>Active listening</li>
 							<li>Highly organized</li>
 							<li>Friendly</li>
@@ -64,8 +110,14 @@
 							<li>Attention to detail</li>
 							<li>Google Docs experience</li>
 				</div>
-			<div class="column">			
+			
+			<!-- fix indenting – this column class SHOULD be indented -->
+			<!-- NOTE: Collapse parent tags on left side of your Sublime editor to make sure tags line up properly -->
+			<div class="column">
+					<!-- fix indenting -->
 					<h2>Hobbies</h2>
+					<!-- need beginning <ul> or <ol> -->
+					<!-- fix indenting -->
 					        <li>Cooking</li>
 					        <li>Drawing</li>
 					        <li>Hiking</li>
@@ -74,14 +126,19 @@
 					        <li>Snowboarding</li>
 		    </div>
 		</div>    
+			<!-- fix indenting -->
 			<blockquote>
 				“Any fool can write code that a computer can understand.<br> Good programmers write code that humans can understand." <br> Martin Fowler
 			</blockquote>
 	    </main>
 	    <footer>
 	        <h2> Contact information </h2>
+				<!-- need beginning <ul> or <ol> -->
 	            <li>email: alona@hoook42.com</li>
-	            <li>phone number: 650-6600-389</li>
+				<li>phone number: 650-6600-389</li>
+				
+				<!-- I'd also recommend putting this same nav in the header -->
+				<!-- so users can use both locations to navigate around your site -->
 	            <nav>
 	            	<a href="projects.html">My projects</a>
 	            </nav>
